@@ -21,6 +21,7 @@ sdk.dir=/Users/wanggang/Library/Android/sdk
 二、开始写一个简单的JNI程序
 
 1、新建一个类JNIUtils
+```Java
 public class JNIUtils {
     static {
         //括号的参数可以任意修改
@@ -30,6 +31,7 @@ public class JNIUtils {
     //java调C/C++中的方法都需要用native声明且方法名必须和C/C++的方法名一样
     public native String test();
 }
+```
 
 2、在主module的build.gradle文件里defaultConfig中配置ndk。
     defaultConfig {
@@ -68,6 +70,7 @@ JNIEXPORT jstring JNICALL Java_com_wanggang_www_ndksodemo_JNIUtils_test
 }
 
 6、在MainActivity中调用
+```Java
 public class MainActivity extends AppCompatActivity {
 
     private TextView ndk_txt;
@@ -81,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         ndk_txt.setText(new JNIUtils().test());
     }
 }
+```
 
 7、创建编译文件Android.mk
 在app/src/main/jni/目录下创建Android.mk文件：
