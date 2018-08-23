@@ -110,4 +110,4 @@ include $(BUILD_SHARED_LIBRARY)
         }
     }
 ```
-![image](https://github.com/ican87/NdkSoDemo/1.jpg)
+![image](https://github.com/ican87/NdkSoDemo/blob/master/1.jpg)
