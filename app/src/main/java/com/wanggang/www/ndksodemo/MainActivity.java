@@ -2,6 +2,7 @@ package com.wanggang.www.ndksodemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         ndk_txt = findViewById(R.id.ndk_txt);
         ndk_txt.setText(new JNIUtils().test());
+        Log.i("wanggang", "MainActivity-onCreate");
     }
 }

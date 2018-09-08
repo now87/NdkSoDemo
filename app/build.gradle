@@ -11,6 +11,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         ndk {
+            ldLibs "log"
             moduleName "jniutil"//编译出so的名字
             abiFilters 'x86', 'armeabi-v7a', 'x86_64' //输出指定abi体系结构下的so库。
         }

@@ -1,8 +1,11 @@
 package com.wanggang.www.ndksodemo;
 
+import android.util.Log;
+
 public class JNIUtils {
     static {
         //括号的参数可以任意修改
+        Log.i("wanggang", "load jni");
         System.loadLibrary("jniutil");
     }
 
