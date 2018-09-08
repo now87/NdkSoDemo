@@ -110,11 +110,8 @@ include $(BUILD_SHARED_LIBRARY)
         }
     }
 ```
-![image](https://github.com/ican87/NdkSoDemo/blob/master/1.jpg)
 
-<br>
-<br>
-如何在AndroidStudio中输出JNI log？
+三、如何在AndroidStudio中输出JNI log？
 
 1、在app/build.gradle中添加ldLibs "log"
 ```Java
@@ -169,5 +166,5 @@ JNIEXPORT jstring JNICALL Java_com_wanggang_www_ndksodemo_JNIUtils_test
     return (*env)->NewStringUTF(env, "jni demo --- invoke success");
 }
 ```
-
+![image](https://github.com/ican87/NdkSoDemo/blob/master/1.jpg)
 
